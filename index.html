@@ -3,51 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="崔恩侨｜三级智能硬件装调员（高级工）｜AI 辅助编程｜工业自动化">
+  <meta name="description" content="崔恩侨，工业自动化方向，持三级智能硬件装调员（高级工）证书。用 Siemens TIA Portal / SCL 和 AI 辅助编程做 PLC 项目。">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="崔恩侨｜个人简历">
+  <meta property="og:description" content="工业自动化 · AI 辅助编程 · TIA Portal / SCL 项目作品集">
+  <meta property="og:locale" content="zh_CN">
   <title>崔恩侨｜个人简历</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <!-- 没开 JS 时，保证内容不会因入场动画而一直隐藏 -->
+  <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "崔恩侨",
+    "knowsAbout": ["PLC 编程", "Siemens TIA Portal", "SCL", "HMI 组态", "AI 辅助编程", "智能硬件装调"],
+    "sameAs": ["https://github.com/cuienqiao"]
+  }
+  </script>
 </head>
 <body>
   <header class="nav">
     <a class="brand" href="#top">崔恩侨</a>
-    <nav>
+    <nav id="site-nav" aria-label="页面导航">
       <a href="#about">关于我</a>
       <a href="#skills">技能</a>
       <a href="#projects">项目</a>
       <a href="#experience">获奖</a>
       <a href="#contact">联系</a>
     </nav>
-    <span class="nav-dot"></span>
+    <span class="nav-dot" aria-hidden="true"></span>
+    <button type="button" class="menu-btn" aria-label="打开菜单" aria-expanded="false" aria-controls="site-nav"><span></span><span></span></button>
   </header>
 
   <main id="top">
     <section class="hero section">
-      <div class="hero-copy reveal">
-        <p class="eyebrow">PERSONAL PORTFOLIO · 2026</p>
-        <h1>工业自动化<br><span>AI辅助编程</span></h1>
-        <p class="hero-sub">三级智能硬件装调员（高级工） · AI 辅助编程 · 博图</p>
+      <div class="hero-copy">
+        <p class="eyebrow">个人作品集</p>
+        <h1>工业自动化<br><span>AI 辅助编程</span></h1>
+        <p class="hero-sub">我用 AI 辅助写 PLC 程序，把控制逻辑、HMI 画面和搭建教程从头做完整。</p>
         <div class="hero-tags">
-          <span>TIA PORTAL</span><span>SCL</span><span>AI 辅助编程</span><span>智能硬件装调</span>
+          <span>TIA Portal</span><span>SCL</span><span>HMI 组态</span><span>智能硬件装调</span>
         </div>
-        <a class="scroll-link" href="#about">向下探索 <span>↓</span></a>
+        <a class="scroll-link" href="#projects">查看我的项目 <span aria-hidden="true">↓</span></a>
       </div>
 
       <div class="portrait-wrap reveal">
         <div class="portrait">
-          <img src="images/profile.jpg" alt="崔恩侨">
+          <img src="images/profile.jpg" alt="崔恩侨的照片" decoding="async" fetchpriority="high">
         </div>
-        <div class="portrait-caption">01 / PROFILE</div>
+        <div class="portrait-caption">崔恩侨</div>
       </div>
     </section>
 
-    <section id="about" class="section split">
-      <div class="section-label">01 / 关于我</div>
+    <section id="about" class="section split" aria-label="关于我">
+      <div class="section-label">关于我</div>
       <div class="content">
-        <p class="lead">我是工业自动化方向的学生，专注把 AI 用在 PLC 编程与项目落地里——让机器控制更快、更可复用。</p>
-        <p class="muted">我会用 Siemens TIA Portal / SCL 写程序，也用 AI 工具完成代码、调试与文档。比起「会写一段代码」，我更在意「把一个东西从头做出来」：从控制逻辑、HMI 画面到可复现的教程。</p>
+        <p class="lead">我是工业自动化方向的学生，专注把 AI 用在 PLC 编程与项目落地里，让机器控制更快、更可复用。</p>
+        <p class="muted">我用 Siemens TIA Portal / SCL 写程序，也用 AI 工具完成代码、调试与文档。比起写出一段能跑的代码，我更在意把一个东西从头做出来：控制逻辑、HMI 画面，再到别人能照着复现的教程。</p>
         <div class="facts">
           <div><strong>高级工</strong><span>三级智能硬件装调员</span></div>
           <div><strong>3 项</strong><span>省级 / 市级竞赛奖项</span></div>
@@ -56,73 +73,75 @@
       </div>
     </section>
 
-    <section id="skills" class="section">
+    <section id="skills" class="section" aria-label="技能">
       <div class="section-head">
-        <div class="section-label">02 / 技能</div>
+        <div class="section-label">技能</div>
         <h2>我正在学习与实践的技术</h2>
       </div>
       <div class="skill-grid">
-        <article class="skill-card"><span>01</span><h3>博图 / PLC</h3><p>Siemens TIA Portal · SCL · FB 功能块 · 状态机 · HMI 组态</p></article>
-        <article class="skill-card"><span>02</span><h3>AI 辅助编程</h3><p>用 AI 工具完成 PLC 程序编写、调试与文档，提升开发效率</p></article>
-        <article class="skill-card"><span>03</span><h3>智能硬件装调</h3><p>三级智能硬件装调员（高级工），硬件装调与调试</p></article>
-        <article class="skill-card"><span>04</span><h3>项目落地</h3><p>需求 → 程序 → HMI → 文档，把想法做成能演示的东西</p></article>
+        <article class="skill-card"><span>01</span><h3>博图 / PLC</h3><p>Siemens TIA Portal、SCL、FB 功能块、状态机、HMI 组态</p></article>
+        <article class="skill-card"><span>02</span><h3>AI 辅助编程</h3><p>用 AI 工具编写和调试 PLC 程序、整理文档，缩短开发时间</p></article>
+        <article class="skill-card"><span>03</span><h3>智能硬件装调</h3><p>持职业技能等级证书，能完成智能硬件的安装与调试</p></article>
+        <article class="skill-card"><span>04</span><h3>项目落地</h3><p>从需求到程序、HMI 和文档，把想法做成能演示的作品</p></article>
       </div>
     </section>
 
-    <section id="projects" class="section">
+    <section id="projects" class="section" aria-label="项目">
       <div class="section-head">
-        <div class="section-label">03 / 项目</div>
-        <h2>Selected Projects</h2>
-        <p class="muted">用 AI 辅助完成、可演示、可复现的项目。</p>
+        <div class="section-label">项目</div>
+        <h2>代表项目</h2>
+        <p class="muted">都用 AI 辅助完成，能演示，也能按教程复现。</p>
       </div>
       <div class="project-list">
-        <a class="project-card" href="https://github.com/cuienqiao" target="_blank" rel="noopener">
+        <!-- TODO：把下面三个链接换成各自的 GitHub 仓库地址，现在都指向个人主页 -->
+        <a class="project-card" href="https://github.com/cuienqiao" target="_blank" rel="noopener noreferrer">
           <div class="project-no">01</div>
-          <div><h3>五子棋 · TIA Portal + HMI</h3><p>S7-1200 + KTP700 上用 SCL 实现 15×15 双人对战，四方向胜负判断 + 状态机，配完整搭建教程</p></div>
-          <span class="arrow">↗</span>
+          <div><h3>五子棋 · TIA Portal + HMI</h3><p>在 S7-1200 + KTP700 上用 SCL 实现 15×15 双人对战：四个方向判断胜负，状态机控制对局流程，附完整搭建教程。</p></div>
+          <span class="arrow" aria-hidden="true">↗</span>
         </a>
-        <a class="project-card" href="https://github.com/cuienqiao" target="_blank" rel="noopener">
+        <a class="project-card" href="https://github.com/cuienqiao" target="_blank" rel="noopener noreferrer">
           <div class="project-no">02</div>
-          <div><h3>红绿灯控制功能块</h3><p>状态机 + TON 定时器的参数化 FB，时长可配置，HMI 实时倒计时</p></div>
-          <span class="arrow">↗</span>
+          <div><h3>红绿灯控制功能块</h3><p>参数化 FB，用状态机和 TON 定时器控制灯序，各阶段时长可配置，HMI 实时显示倒计时。</p></div>
+          <span class="arrow" aria-hidden="true">↗</span>
         </a>
-        <a class="project-card" href="https://github.com/cuienqiao" target="_blank" rel="noopener">
+        <a class="project-card" href="https://github.com/cuienqiao" target="_blank" rel="noopener noreferrer">
           <div class="project-no">03</div>
-          <div><h3>个人简历网站</h3><p>纯 HTML / CSS / JS 静态站，Cloudflare Pages + GitHub 自动部署</p></div>
-          <span class="arrow">↗</span>
+          <div><h3>个人简历网站</h3><p>纯 HTML / CSS / JS 静态站，代码放在 GitHub，推送后由 Cloudflare Pages 自动部署。</p></div>
+          <span class="arrow" aria-hidden="true">↗</span>
         </a>
       </div>
     </section>
 
-    <section id="experience" class="section">
+    <section id="experience" class="section" aria-label="获奖与认证">
       <div class="section-head">
-        <div class="section-label">04 / 获奖与认证</div>
-        <h2>奖项与技能认证</h2>
+        <div class="section-label">获奖与认证</div>
+        <h2>比赛成绩与职业认证</h2>
       </div>
       <div class="timeline">
         <div class="timeline-item"><span>2026 · 辽宁省</span><div><h3>世界职业院校技能大赛 · 人工智能赛道 · 省赛铜奖</h3></div></div>
         <div class="timeline-item"><span>2026 · 沈阳市</span><div><h3>沈阳市第四届「舒心传技」职业技能大赛 · 第四名</h3></div></div>
         <div class="timeline-item"><span>2026 · 辽宁省</span><div><h3>「挑战杯」辽宁省大学生创业计划竞赛 · 省赛三等奖</h3></div></div>
-        <div class="timeline-item"><span>技能认证</span><div><h3>三级智能硬件装调员（高级工）</h3><p>职业技能等级证书</p></div></div>
+        <div class="timeline-item"><span>职业认证</span><div><h3>三级智能硬件装调员（高级工）</h3><p>职业技能等级证书</p></div></div>
       </div>
     </section>
 
-    <section id="contact" class="section contact">
-      <div class="section-label">05 / 联系</div>
+    <section id="contact" class="section contact" aria-label="联系">
+      <div class="section-label">联系</div>
       <div>
-        <h2>保持联系</h2>
-        <p class="muted">如果你想了解我的项目、技术学习或合作方向，欢迎联系我。</p>
+        <h2>联系我</h2>
+        <p class="muted">想了解我的项目、技术学习，或者聊合作，都欢迎联系我。</p>
         <div class="contact-list">
-          <div><span>邮箱</span><a href="mailto:1373963283@qq.com">1373963283@qq.com</a></div>
-          <div><span>微信</span><strong>Caelum-Elevate-Quest</strong></div>
-          <div><span>GitHub</span><a href="https://github.com/cuienqiao" target="_blank" rel="noopener">github.com/cuienqiao ↗</a></div>
-          <div><span>手机</span><a href="tel:18704047140">18704047140</a></div>
+          <div><span>邮箱</span><a href="mailto:1373963283@qq.com">1373963283@qq.com</a><button type="button" class="copy-btn" data-copy="1373963283@qq.com" data-label="邮箱" aria-label="复制邮箱">复制</button></div>
+          <div><span>微信</span><strong>Caelum-Elevate-Quest</strong><button type="button" class="copy-btn" data-copy="Caelum-Elevate-Quest" data-label="微信号" aria-label="复制微信号">复制</button></div>
+          <div><span>GitHub</span><a href="https://github.com/cuienqiao" target="_blank" rel="noopener noreferrer">github.com/cuienqiao ↗</a></div>
+          <div><span>手机</span><a href="tel:18704047140">18704047140</a><button type="button" class="copy-btn" data-copy="18704047140" data-label="手机号" aria-label="复制手机号">复制</button></div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer><span>崔恩侨</span><span>© 2026</span></footer>
+  <footer><span>崔恩侨</span><a href="#top">回到顶部 ↑</a><span>© 2026</span></footer>
+  <div class="toast" role="status" aria-live="polite"></div>
   <script src="script.js"></script>
 </body>
 </html>
